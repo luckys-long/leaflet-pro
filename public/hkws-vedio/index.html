@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title></title>
+  <script type="text/javascript" src="wfs.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+  <div id="container-top">
+    <video id="video5" class="video_size" autoplay="autoplay" muted loop="true"></video>
+    <div class="inputDiv" style="display: none;">
+      <input id="ws_url_5" type="text" placeholder="请输入wwbsocket" value="/"/>
+      <input id="rtsp_url_5" type="text" placeholder="请输入RTSP" value=""/>
+      <button id="play5" onclick="play()">播 放</button>
+      <button id="stop5" onclick="stop5()">停 止</button>
+    </div>
+  </div>
+  <div id="container-bottom">
+    <div class="container-left">
+      <video id="video1" class="video_size" autoplay="autoplay" muted loop="true"></video>
+      <div class="inputDiv" style="display: none;">
+        <input id="ws_url" type="text" placeholder="请输入wwbsocket" value=""/>
+        <input id="rtsp_url" type="text" placeholder="请输入RTSP" value=""/>
+        <button id="play" onclick="play()">播 放</button>
+        <button id="stop" onclick="stop()">停 止</button>
+      </div>
+    </div>
+    <div class="container-center avtiveCss">
+      <video id="video3" class="video_size" autoplay="autoplay" muted loop="true"></video>
+      <div class="inputDiv" style="display: none;">
+        <input id="ws_url_3" type="text" placeholder="请输入wwbsocket" value="/"/>
+        <input id="rtsp_url_3" type="text" placeholder="请输入RTSP" value=""/>
+        <button id="play3" onclick="play()">播 放</button>
+        <button id="stop3" onclick="stop3()">停 止</button>
+      </div>
+    </div>
+    <div class="container-right">
+      <video id="video2" class="video_size" autoplay="autoplay" muted loop="true"></video>
+      <div class="inputDiv" style="display: none;">
+        <input id="ws_url_2" type="text" placeholder="请输入wwbsocket" value="/"/>
+        <input id="rtsp_url_2" type="text" placeholder="请输入RTSP" value=""/>
+        <button id="play1" onclick="play()">播 放</button>
+        <button id="stop1" onclick="stop2()">停 止</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="jslib/jquery-1.12.4/jquery-1.12.4.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/controlScreenIndex.js"></script>
+</html>

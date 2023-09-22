@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="../wfs.min.js"></script>
+  <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+<div class="container">
+    <video id="videomap" class="video_size" autoplay="autoplay" loop="false"></video>
+    <div class="inputDiv" style="display: none;">
+      <input id="ws_url" type="text" placeholder="请输入wwbsocket" value=""/>
+      <input id="rtsp_url" type="text" placeholder="请输入RTSP" value=""/>
+      <button id="play" onclick="play()">播 放</button>
+      <button id="stop" onclick="stop()">停 止</button>
+    </div>
+</div>
+</body>
+<script src="./js/map.js"></script>
+</html>

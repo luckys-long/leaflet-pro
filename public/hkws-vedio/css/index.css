@@ -1,0 +1,85 @@
+
+/*video默认全屏按钮*/
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
+}
+
+/*video默认aduio音量按钮*/
+
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+/*video默认setting按钮*/
+
+video::-internal-media-controls-overflow-button {
+  display: none !important;
+}
+
+/*禁用video的controls（要慎重！不要轻易隐藏掉，会导致点击视频不能播放）*/
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#container-top{
+  width: 96%;
+  height: calc(100% - 100px);
+  border: 2px solid  #005770;
+  margin-bottom: 5px;
+}
+#container-bottom{
+  width: 100%;
+  height: 85px;
+}
+.container-left{
+  width: 31%;
+  height: 78%;
+  display: inline-block;
+  margin-right: 2px;
+}
+.container-center{
+  width: 31%;
+  height: 78%;
+  display: inline-block;
+  margin-right: 2px;
+}
+.container-right{
+  width: 31%;
+  height: 78%;
+  display: inline-block;
+
+}
+.avtiveCss{
+  border: 2px solid #00c3f3;
+}
+.video_size{
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* 关键所在 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

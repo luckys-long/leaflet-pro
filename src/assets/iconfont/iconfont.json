@@ -1,0 +1,86 @@
+{
+  "id": "3905585",
+  "name": "sy-iot",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "山源科技-iot 项目",
+  "glyphs": [
+    {
+      "icon_id": "872685",
+      "name": "设备设备管理",
+      "font_class": "shebeishebeiguanli",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "991874",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1089766",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "3282352",
+      "name": "告警",
+      "font_class": "gaojing",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "4506836",
+      "name": "设备管理",
+      "font_class": "shebeiguanli",
+      "unicode": "ebb7",
+      "unicode_decimal": 60343
+    },
+    {
+      "icon_id": "5653301",
+      "name": "监控",
+      "font_class": "jiankong",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "13872072",
+      "name": "日志管理",
+      "font_class": "rizhiguanli",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "19567455",
+      "name": "日志配置",
+      "font_class": "29rizhipeizhi",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "24848479",
+      "name": "日志管理",
+      "font_class": "rizhiguanli1",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "424072",
+      "name": "状态监控",
+      "font_class": "zhuangtaijiankong",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    },
+    {
+      "icon_id": "826153",
+      "name": "升级",
+      "font_class": "shengji",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    }
+  ]
+}

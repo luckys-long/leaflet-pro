@@ -1,0 +1,72 @@
+apiVersion: v1
+data:
+  Configfile: |
+    configVersion: v2
+    service:
+      id: b7127faa-544f-427b-9a8e-c7710ac3er42
+      name: big-screen-integrated-pro
+      enableShortServiceName: true
+      port: 80
+      paths:
+        - name: /
+kind: ConfigMap
+metadata:
+  name: big-screen-integrated-pro
+  namespace: system
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: big-screen-integrated-pro
+  namespace: system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: big-screen-integrated-pro
+  template:
+    metadata:
+      name: big-screen-integrated-pro
+      namespace: system
+      labels:
+        app: big-screen-integrated-pro
+    spec:
+      containers:
+        - name: big-screen-integrated-pro-container
+          image: 'harbor.internal.wise-paas.cn/microservice/big-screen-integrated-pro:latest'
+          imagePullPolicy: Always
+        - name: register
+          image: 'harbor.internal.wise-paas.cn/microservice/register-client:v3.1.5'
+          imagePullPolicy: IfNotPresent
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - /bin/sh
+                  - '-c'
+                  - sh /usr/local/bin/stop.sh
+          resources:
+            limits:
+              cpu: 120m
+              ephemeral-storage: 150Mi
+              memory: 150Mi
+            requests:
+              cpu: 5m
+              ephemeral-storage: 10Mi
+              memory: 20Mi
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+            - mountPath: /tmp/service.yaml
+              name: big-screen-integrated-pro
+              subPath: service.yaml
+      volumes:
+        - name: big-screen-integrated-pro
+          configMap:
+            name: big-screen-integrated-pro
+            defaultMode: 420
+            items:
+              - key: Configfile
+                path: service.yaml
